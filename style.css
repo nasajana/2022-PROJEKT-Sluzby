@@ -1,0 +1,42 @@
+:root {
+    --bg-color: #fafafa;
+    --grey: #8B8B8B;
+    --black: #000000;
+    --light-blue: #407BFF1F;
+    --brand-blu: #407BFF;
+
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* fonts */
+h1,
+h2 {
+    font-weight: 500;
+    color: var(--black);
+}
+
+h1 {
+    font-size: 1.75em;
+    letter-spacing: 0;
+    /* line-height: ; = line spacing 37*/
+}
+
+h2 {
+    font-size: 1em;
+    /* line-height: ; = line spacing 21*/
+}
+
+p {
+    font-weight: 300;
+}
+
+.p-xs {
+    font-size: calc(1em-3px);
+}
+
+button p {
+    font-size: calc(1em-0.25em);
+    font-weight: 400;
+    color: white;
+}
