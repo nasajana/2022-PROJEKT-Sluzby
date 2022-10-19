@@ -1,15 +1,19 @@
-:root {
+/*:root {
     --bg-color: #fafafa;
     --grey: #8B8B8B;
     --black: #000000;
     --light-blue: #407BFF1F;
-    --brand-blu: #407BFF;
+    --primary-blue: #407BFF;
 
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
+/* view 
+500 × 1657
+768 × 1461
+1200 × 1015
 
-/* fonts */
+/* fonts 
 h1,
 h2 {
     font-weight: 500;
@@ -19,24 +23,103 @@ h2 {
 h1 {
     font-size: 1.75em;
     letter-spacing: 0;
-    /* line-height: ; = line spacing 37*/
+    /* line-height: ; = line spacing 37
 }
 
 h2 {
     font-size: 1em;
-    /* line-height: ; = line spacing 21*/
+    /* line-height: ; = line spacing 21
 }
 
 p {
     font-weight: 300;
+    /* line-height: ; = line spacing 21
 }
 
 .p-xs {
     font-size: calc(1em-3px);
+    color: var(--grey);
 }
 
 button p {
     font-size: calc(1em-0.25em);
     font-weight: 400;
     color: white;
+}
+*/
+:root {
+
+    /* Colors: */
+    --černá: #000000;
+    --šedá: #8B8B8B;
+    --primární-modrá: #407BFF;
+    --bílá: #FFFFFF;
+    --pozadí-stránky: #FAFAFA;
+
+    /* Font/text values */
+    --sluzby-font-family-montserrat: Montserrat;
+    --sluzby-font-style-normal: normal;
+    --sluzby-font-weight-300: 300px;
+    --sluzby-font-weight-medium: medium;
+    --sluzby-font-weight-normal: normal;
+    --sluzby-font-size-13: 13px;
+    --sluzby-font-size-14: 14px;
+    --sluzby-font-size-16: 16px;
+    --sluzby-font-size-28: 28px;
+    --sluzby-character-spacing-0: 0px;
+    --sluzby-line-spacing-17: 17px;
+    --sluzby-line-spacing-18: 18px;
+    --sluzby-line-spacing-21: 21px;
+    --sluzby-line-spacing-37: 37px;
+}
+
+/* Character Styles */
+.h2-nadpis-sekce {
+    font-family: var(--sluzby-font-family-montserrat);
+    font-style: var(--sluzby-font-style-normal);
+    font-weight: var(--sluzby-font-weight-medium);
+    font-size: var(--sluzby-font-size-16);
+    line-height: var(--sluzby-line-spacing-21);
+    letter-spacing: var(--sluzby-character-spacing-0);
+    color: var(--černá);
+}
+
+.h1-hlavni-nadpis {
+    font-family: var(--sluzby-font-family-montserrat);
+    font-style: var(--sluzby-font-style-normal);
+    font-weight: var(--sluzby-font-weight-medium);
+    font-size: var(--sluzby-font-size-28);
+    line-height: var(--sluzby-line-spacing-37);
+    letter-spacing: var(--sluzby-character-spacing-0);
+    color: var(--černá);
+}
+
+.text-ikonabox {
+    font-family: var(--sluzby-font-family-montserrat);
+    font-style: var(--sluzby-font-style-normal);
+    font-weight: var(--sluzby-font-weight-300);
+    font-size: var(--sluzby-font-size-13);
+    line-height: var(--sluzby-line-spacing-17);
+    letter-spacing: var(--sluzby-character-spacing-0);
+    color: var(--šedá);
+}
+
+.bezny-text {
+    font-family: var(--sluzby-font-family-montserrat);
+    font-style: var(--sluzby-font-style-normal);
+    font-weight: var(--sluzby-font-weight-300);
+    font-size: var(--sluzby-font-size-16);
+    line-height: var(--sluzby-line-spacing-21);
+    letter-spacing: var(--sluzby-character-spacing-0);
+    color: var(--šedá);
+}
+
+.text-tlacitko {
+    font-family: var(--sluzby-font-family-montserrat);
+    font-style: var(--sluzby-font-style-normal);
+    font-weight: var(--sluzby-font-weight-normal);
+    font-size: var(--sluzby-font-size-14);
+    line-height: var(--sluzby-line-spacing-18);
+    letter-spacing: var(--sluzby-character-spacing-0);
+    color: var(--bílá);
 }
