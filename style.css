@@ -1,52 +1,13 @@
-/*:root {
-    --bg-color: #fafafa;
-    --grey: #8B8B8B;
-    --black: #000000;
-    --light-blue: #407BFF1F;
-    --primary-blue: #407BFF;
-
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
-/* view 
-500 × 1657
-768 × 1461
-1200 × 1015
-
-/* fonts 
-h1,
-h2 {
-    font-weight: 500;
-    color: var(--black);
+html {
+    box-sizing: border-box;
 }
 
-h1 {
-    font-size: 1.75em;
-    letter-spacing: 0;
-    /* line-height: ; = line spacing 37
+*,
+:after,
+:before {
+    box-sizing: inherit;
 }
 
-h2 {
-    font-size: 1em;
-    /* line-height: ; = line spacing 21
-}
-
-p {
-    font-weight: 300;
-    /* line-height: ; = line spacing 21
-}
-
-.p-xs {
-    font-size: calc(1em-3px);
-    color: var(--grey);
-}
-
-button p {
-    font-size: calc(1em-0.25em);
-    font-weight: 400;
-    color: white;
-}
-*/
 :root {
 
     /* Colors: */
@@ -77,7 +38,7 @@ button p {
 .h2-nadpis-sekce {
     font-family: var(--sluzby-font-family-montserrat);
     font-style: var(--sluzby-font-style-normal);
-  /*  font-weight: var(--sluzby-font-weight-medium);*/
+    /*  font-weight: var(--sluzby-font-weight-medium);*/
     font-size: var(--sluzby-font-size-16);
     line-height: var(--sluzby-line-spacing-21);
     letter-spacing: var(--sluzby-character-spacing-0);
@@ -87,7 +48,7 @@ button p {
 .h1-hlavni-nadpis {
     font-family: var(--sluzby-font-family-montserrat);
     font-style: var(--sluzby-font-style-normal);
- /* font-weight: var(--sluzby-font-weight-medium);*/
+    /* font-weight: var(--sluzby-font-weight-medium);*/
     font-size: var(--sluzby-font-size-28);
     line-height: var(--sluzby-line-spacing-37);
     letter-spacing: var(--sluzby-character-spacing-0);
@@ -108,7 +69,7 @@ button p {
 .bezny-text {
     font-family: var(--sluzby-font-family-montserrat);
     font-style: var(--sluzby-font-style-normal);
-  /*  font-weight: var(--sluzby-font-weight-300);*/
+    /*  font-weight: var(--sluzby-font-weight-300);*/
     font-size: var(--sluzby-font-size-16);
     line-height: var(--sluzby-line-spacing-21);
     letter-spacing: var(--sluzby-character-spacing-0);
@@ -126,10 +87,14 @@ button p {
     margin: 0;
 }
 
-.h1-hlavni-nadpis{
+body{
+    background-color: var(--pozadí-stránky);
+}
+.h1-hlavni-nadpis {
     position: relative;
 }
-.h1-hlavni-nadpis::after{
+
+.h1-hlavni-nadpis::after {
     content: "";
     display: block;
     width: 60px;
@@ -140,19 +105,18 @@ button p {
     bottom: -20%;
 }
 
-/* prostor */
 
-.obsah {
-    width: 500px;
+
+.hero,
+.text-kancelar,
+.text-delegati,
+.sekce-ikonabox {
+    max-width: 500px;
     margin: auto;
+    padding: 20px;
     text-align: center;
 }
 
-.hero,
-.kancelar,
-.delegati{
-    padding: 20px;
-}
 .btn {
     display: block;
     height: 40px;
@@ -176,11 +140,62 @@ button p {
     align-items: center;
     height: 80px;
     border-radius: 10px;
+    background-color: var(--bílá);
     box-shadow: 0px 4px 6px #407BFF1F;
     margin: 15px 0;
+    padding: 15px;
 }
 
 .ikonabox img {
     height: 40px;
     flex-basis: 20%
+}
+
+@media (min-width: 768px) {
+
+    .hero,
+    .text-kancelar,
+    .text-delegati {
+        max-width: 600px;
+        margin: auto;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .tlacitka {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        margin: 0 10px;
+        
+    }
+    
+    .sekce-ikonabox {
+        display: flex;
+        gap: 20px;
+        max-width: 768px;
+    }
+    
+    .ikonabox {
+        height: 172px;
+        flex-direction: column;
+        justify-content: space-around;
+        flex: 1 1 33.333%;
+    }
+
+}
+@media (min-width: 1200px){
+    .hero,
+    .kancelar,
+    .delegati{
+        display: flex;
+        max-width: 1040px;
+        margin: auto;
+    }
+    .hero,
+    .kancelar{
+        flex-direction: row-reverse;
+    }
 }
