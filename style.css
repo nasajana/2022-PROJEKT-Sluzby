@@ -69,7 +69,7 @@ html {
 .bezny-text {
     font-family: var(--sluzby-font-family-montserrat);
     font-style: var(--sluzby-font-style-normal);
-    /*  font-weight: var(--sluzby-font-weight-300);*/
+    font-weight: 300;
     font-size: var(--sluzby-font-size-16);
     line-height: var(--sluzby-line-spacing-21);
     letter-spacing: var(--sluzby-character-spacing-0);
@@ -87,9 +87,10 @@ html {
     margin: 0;
 }
 
-body{
+body {
     background-color: var(--pozadí-stránky);
 }
+
 .h1-hlavni-nadpis {
     position: relative;
 }
@@ -98,7 +99,7 @@ body{
     content: "";
     display: block;
     width: 60px;
-    height: 1px;
+    height: 2px;
     background: var(--primární-modrá);
     position: absolute;
     left: 44%;
@@ -162,22 +163,19 @@ body{
         text-align: center;
     }
 
-    .tlacitka {
-        display: flex;
-        justify-content: center;
+    .btn {
+        margin: 0 20px 0 0;
+        display: inline-block;
+
     }
 
-    .btn {
-        margin: 0 10px;
-        
-    }
-    
     .sekce-ikonabox {
         display: flex;
         gap: 20px;
         max-width: 768px;
+        padding: 0;
     }
-    
+
     .ikonabox {
         height: 172px;
         flex-direction: column;
@@ -186,16 +184,41 @@ body{
     }
 
 }
-@media (min-width: 1200px){
+
+@media (min-width: 1100px) {
+
     .hero,
     .kancelar,
-    .delegati{
+    .delegati {
         display: flex;
         max-width: 1040px;
         margin: auto;
+        gap: 60px;
     }
+
     .hero,
-    .kancelar{
+    .kancelar {
         flex-direction: row-reverse;
+    }
+
+    .hero,
+    .text-kancelar,
+    .text-delegati {
+        text-align: left;
+        padding: 0;
+
+    }
+
+    .h1-hlavni-nadpis::after {
+        left: 0;
+        bottom: -20%;
+    }
+   .obrazek-hero,
+   .text-hero{
+    width: calc(50% - 30px);
+   }
+
+    .sekce-ikonabox {
+        min-width: 550px;
     }
 }
