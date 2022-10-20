@@ -116,9 +116,8 @@ body {
     padding: 0 20px;
 }
 
-.hero,
-.kancelar,
-.delegati {
+.obrazek-hero,
+.h2-nadpis-sekce {
     margin-top: 60px;
 }
 
@@ -160,16 +159,18 @@ body {
     .text-kancelar,
     .text-delegati {
         max-width: 600px;
-     /*   margin: 80px auto;
+        /*   margin: 80px auto;
         padding: 25px;*/
         text-align: center;
     }
 
-    .h2-nadpis-sekce{
-        margin-top: 0px;
+    .h2-nadpis-sekce {
+        margin-top: 80px;
     }
-    .bezny-text{
+
+    .bezny-text {
         padding: 0 20px;
+        margin-bottom: 40px;
     }
 
     .btn {
@@ -207,6 +208,15 @@ body {
         gap: 60px;
     }
 
+    .hero{
+        margin-top: 60px;
+            }
+
+.kancelar,
+.delegati{
+    margin-top: 80px;
+}         
+
     .hero,
     .kancelar {
         flex-direction: row-reverse;
@@ -217,7 +227,6 @@ body {
     .text-delegati {
         text-align: left;
         padding: 0;
-
     }
 
     .h1-hlavni-nadpis::after {
@@ -226,8 +235,26 @@ body {
     }
 
     .obrazek-hero,
+    .h2-nadpis-sekce{
+        margin-top: 0;
+    }
+
+    .bezny-text{
+        padding: 0;
+    
+    }
+    .hero img{
+        display: block;
+        width: 100%;
+        margin: auto;
+        max-width: 425px;
+    }
+
+
+    .obrazek-hero,
     .text-hero {
         width: calc(50% - 30px);
+       
     }
 
     .sekce-ikonabox {
