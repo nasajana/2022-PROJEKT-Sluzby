@@ -37,52 +37,55 @@ html {
 /* Character Styles */
 .h2-nadpis-sekce {
     font-family: var(--sluzby-font-family-montserrat);
-    font-style: var(--sluzby-font-style-normal);
-    /*  font-weight: var(--sluzby-font-weight-medium);*/
+    /* font-style: var(--sluzby-font-style-normal);
+    /* font-weight: var(--sluzby-font-weight-medium);*/
     font-size: var(--sluzby-font-size-16);
-    line-height: var(--sluzby-line-spacing-21);
-    letter-spacing: var(--sluzby-character-spacing-0);
+    font-weight: 500;
+    /* line-height: var(--sluzby-line-spacing-21);
+    letter-spacing: var(--sluzby-character-spacing-0);*/
     color: var(--černá);
 }
 
 .h1-hlavni-nadpis {
     font-family: var(--sluzby-font-family-montserrat);
-    font-style: var(--sluzby-font-style-normal);
+    /* font-style: var(--sluzby-font-style-normal);
     /* font-weight: var(--sluzby-font-weight-medium);*/
     font-size: var(--sluzby-font-size-28);
-    line-height: var(--sluzby-line-spacing-37);
-    letter-spacing: var(--sluzby-character-spacing-0);
+    font-weight: 500;
+    /* line-height: var(--sluzby-line-spacing-37);
+    letter-spacing: var(--sluzby-character-spacing-0);*/
     color: var(--černá);
 }
 
 .text-ikonabox {
     font-family: var(--sluzby-font-family-montserrat);
-    font-style: var(--sluzby-font-style-normal);
-    /*  font-weight: var(--sluzby-font-weight-300);*/
+    /* font-style: var(--sluzby-font-style-normal);
+    /* font-weight: var(--sluzby-font-weight-300);*/
     font-size: var(--sluzby-font-size-13);
-    line-height: var(--sluzby-line-spacing-17);
-    letter-spacing: var(--sluzby-character-spacing-0);
+    font-weight: 300;
+    /* line-height: var(--sluzby-line-spacing-17);
+    letter-spacing: var(--sluzby-character-spacing-0);*/
     color: var(--šedá);
     margin: 0;
 }
 
 .bezny-text {
     font-family: var(--sluzby-font-family-montserrat);
-    font-style: var(--sluzby-font-style-normal);
-    font-weight: var(--unnamed-font-weight-300);
+    /* font-style: var(--sluzby-font-style-normal);*/
+    font-weight: 300;
     font-size: var(--sluzby-font-size-16);
-    line-height: var(--sluzby-line-spacing-21);
-    letter-spacing: var(--sluzby-character-spacing-0);
+    /* line-height: var(--sluzby-line-spacing-21);
+    letter-spacing: var(--sluzby-character-spacing-0);*/
     color: var(--šedá);
 }
 
 .text-tlacitko {
     font-family: var(--sluzby-font-family-montserrat);
-    font-style: var(--sluzby-font-style-normal);
-    font-weight: var(--sluzby-font-weight-normal);
+    /*  font-style: var(--sluzby-font-style-normal);*/
+    font-weight: 400;
     font-size: var(--sluzby-font-size-14);
-    line-height: var(--sluzby-line-spacing-18);
-    letter-spacing: var(--sluzby-character-spacing-0);
+    /* line-height: var(--sluzby-line-spacing-18);
+    letter-spacing: var(--sluzby-character-spacing-0);*/
     color: var(--bílá);
     margin: 0;
 }
@@ -135,6 +138,13 @@ body {
 
 .sekundarni {
     background-color: var(--šedá);
+}
+
+.primarni:hover,
+.primarni:focus,
+.sekundarni:hover,
+.sekundarni:focus {
+    opacity: 0.85;
 }
 
 .ikonabox {
@@ -208,14 +218,14 @@ body {
         gap: 60px;
     }
 
-    .hero{
+    .hero {
         margin-top: 60px;
-            }
+    }
 
-.kancelar,
-.delegati{
-    margin-top: 80px;
-}         
+    .kancelar,
+    .delegati {
+        margin-top: 80px;
+    }
 
     .hero,
     .kancelar {
@@ -235,15 +245,16 @@ body {
     }
 
     .obrazek-hero,
-    .h2-nadpis-sekce{
+    .h2-nadpis-sekce {
         margin-top: 0;
     }
 
-    .bezny-text{
+    .bezny-text {
         padding: 0;
-    
+
     }
-    .hero img{
+
+    .hero img {
         display: block;
         width: 100%;
         margin: auto;
@@ -254,7 +265,7 @@ body {
     .obrazek-hero,
     .text-hero {
         width: calc(50% - 30px);
-       
+
     }
 
     .sekce-ikonabox {
