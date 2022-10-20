@@ -120,19 +120,17 @@ body {
 
 .btn {
     display: block;
-    height: 40px;
     border: none;
     border-radius: 20px;
     margin: 10px auto;
+    padding: 11px 30px;
 }
 
 .primarni {
-    width: 195px;
     background-color: var(--primární-modrá);
 }
 
 .sekundarni {
-    width: 220px;
     background-color: var(--šedá);
 }
 
@@ -174,6 +172,7 @@ body {
         gap: 20px;
         max-width: 768px;
         padding: 0;
+        margin: 15px auto;
     }
 
     .ikonabox {
@@ -181,6 +180,7 @@ body {
         flex-direction: column;
         justify-content: space-around;
         flex: 1 1 33.333%;
+        margin: 0;
     }
 
 }
@@ -213,10 +213,11 @@ body {
         left: 0;
         bottom: -20%;
     }
-   .obrazek-hero,
-   .text-hero{
-    width: calc(50% - 30px);
-   }
+
+    .obrazek-hero,
+    .text-hero {
+        width: calc(50% - 30px);
+    }
 
     .sekce-ikonabox {
         min-width: 550px;
