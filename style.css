@@ -58,7 +58,7 @@ html {
 .text-ikonabox {
     font-family: var(--sluzby-font-family-montserrat);
     font-style: var(--sluzby-font-style-normal);
-  /*  font-weight: var(--sluzby-font-weight-300);*/
+    /*  font-weight: var(--sluzby-font-weight-300);*/
     font-size: var(--sluzby-font-size-13);
     line-height: var(--sluzby-line-spacing-17);
     letter-spacing: var(--sluzby-character-spacing-0);
@@ -69,7 +69,7 @@ html {
 .bezny-text {
     font-family: var(--sluzby-font-family-montserrat);
     font-style: var(--sluzby-font-style-normal);
-    font-weight: 400;
+    font-weight: var(--unnamed-font-weight-300);
     font-size: var(--sluzby-font-size-16);
     line-height: var(--sluzby-line-spacing-21);
     letter-spacing: var(--sluzby-character-spacing-0);
@@ -106,20 +106,19 @@ body {
     bottom: -20%;
 }
 
-
-
 .hero,
 .text-kancelar,
 .text-delegati,
 .sekce-ikonabox {
     max-width: 500px;
     margin: auto;
-    padding: 0s 20px;
     text-align: center;
+    padding: 0 20px;
 }
 
-.text-kancelar,
-.text-delegati {
+.hero,
+.kancelar,
+.delegati {
     margin-top: 60px;
 }
 
@@ -128,7 +127,7 @@ body {
     border: none;
     border-radius: 20px;
     margin: 10px auto;
-    padding: 11px 30px;
+    padding: 10px 30px;
 }
 
 .primarni {
@@ -146,7 +145,7 @@ body {
     border-radius: 10px;
     background-color: var(--bílá);
     box-shadow: 0px 4px 6px #407BFF1F;
-    margin: 15px;
+    margin: 15px 0;
     padding: 15px;
 }
 
@@ -161,9 +160,16 @@ body {
     .text-kancelar,
     .text-delegati {
         max-width: 600px;
-        margin: auto;
-        padding: 25px;
+     /*   margin: 80px auto;
+        padding: 25px;*/
         text-align: center;
+    }
+
+    .h2-nadpis-sekce{
+        margin-top: 0px;
+    }
+    .bezny-text{
+        padding: 0 20px;
     }
 
     .btn {
@@ -197,7 +203,7 @@ body {
     .delegati {
         display: flex;
         max-width: 1040px;
-        margin: 80px auto;
+        margin: auto;
         gap: 60px;
     }
 
